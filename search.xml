@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Netcup重置系统</title>
+      <link href="/2024/10/14/new-page/"/>
+      <url>/2024/10/14/new-page/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Netcup-重装系统"><a href="#Netcup-重装系统" class="headerlink" title="Netcup 重装系统"></a>Netcup 重装系统</h1><p>编写&#x2F;更新时间：2024-10-14 21:00:00</p><h2 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h2><p>本文章为指导入门型，如有错误请及时指出 <a href="https://t.me/upwithstar">TG 联系</a></p><p>SCP是Netcup的产品服务控制台，可以订购，查询产品信息，提交工单等</p><p>CCP是Netcup的设备控制台，可以对服务器进行操作比如VNC，重置，挂载等</p><h2 id="配置ssh密钥"><a href="#配置ssh密钥" class="headerlink" title="配置ssh密钥"></a>配置ssh密钥</h2><p>点击“SCP Auto-Login”进入SCP面板<br><img src="https://img.myservps.work/2024-10/20241014180236-5dc8b6ab6fbfbc59ffbbb65736998075.png"></p><p>选中一台设备，进入该设备的控制台，然后点击右上角的Option<br><img src="https://img.myservps.work/2024-10/20241014181649-c8311e2393b702c691f38b4f28d9d1b3.png"></p><p>建议使用ssh登陆方式，因为netcup重置系统sshd_config配置有问题，所以还得先通过VNC修改ssh配置，使用ssh密钥登录就没有这个烦恼<br><img src="https://img.myservps.work/2024-10/20241014181920-dcf3ce6fb45f9d2fc59c3ce0198d1015.png"></p><p><a href="https://bkssl.com/ssl/ssh_generate">在线ssh密钥对生成工具网站</a>  可以使用这个快速生成ssh密钥对<br><img src="https://img.myservps.work/2024-10/20241014182419-123e95d08bca177bab9c3b89a6e46021.png"></p><p>回到SCP，把公钥贴上去，起个名字，SAVE保存，你的私钥与ssh密钥应该妥善保存<br><img src="https://img.myservps.work/2024-10/20241014183053-e4dc89bd4179735b598cd0536f4d5b95.png"></p><h2 id="SCP-重置系统"><a href="#SCP-重置系统" class="headerlink" title="SCP 重置系统"></a>SCP 重置系统</h2><p><img src="https://img.myservps.work/2024-10/20241014183233-5147d932beff9f7a7b5801f06944d176.png"></p><p>选择要安装的镜像，这些为常用镜像，点击对应镜像即可进入下一步<br><img src="https://img.myservps.work/2024-10/20241014183300-3cb3dbc49edd49853389e728bc0629cd.png"></p><p>然后选择这里<br><img src="https://img.myservps.work/2024-10/20241014183442-aa19ef1b89dc88b7d42d3f66cf1be698.png"></p><p>根据图片信息，Locale为语言环境，可以选择 <code>en_US</code><br><img src="https://img.myservps.work/2024-10/20241014183733-1dd41c438bb53f7855fa7453e232c0ed.png"></p><p>预览并重置<br><img src="https://img.myservps.work/2024-10/20241014184054-00b52ccf55dddbc891f48f9dca73f380.png"></p><p>重置中，不要关闭页面<br><img src="https://img.myservps.work/2024-10/20241014184131-0834b9f3bdf0981eea14978320f088f0.png"></p><p>这里重置完成会有提示，并且这里还会给你Root密钥，不过无所谓，我们使用SSH登录<br><img src="https://img.myservps.work/2024-10/20241014184644-36225a90f0fa38f5311143d74be2d243.png"></p><h2 id="Termius-登录"><a href="#Termius-登录" class="headerlink" title="Termius 登录"></a>Termius 登录</h2><p>Termius可以去<a href="https://termius.com/">Termius官网</a>  下载或者微软商店以及谷歌商店<br>Termius必须付费，可以去小黄鱼买低价区的号</p><p>添加ssh密钥对<br><img src="https://img.myservps.work/2024-10/20241014195116-89d1faf2826caf4ef63370ac2931305a.png"></p><p>配置ssh连接<br><img src="https://img.myservps.work/2024-10/20241014200429-4b97a97d45d16cfa631bcda4e7c2e436.png"></p><p>详细配置，Password是Root的密码，SSH的密码叫PassPhrase<br><img src="https://img.myservps.work/2024-10/20241014200606-6f8cf7c543cba90ab62a0194f383bd7e.png"></p><h2 id="Terminal-登录"><a href="#Terminal-登录" class="headerlink" title="Terminal 登录"></a>Terminal 登录</h2><p><a href="https://www.terminal.icu/">官网下载Xterminal</a></p><p>创建仓库密码<br><img src="https://img.myservps.work/2024-10/20241014202053-3a310d431e2dc70138d74487bc6ac4ca.png"></p><p>配置SSH连接<br><img src="https://img.myservps.work/2024-10/20241014202347-76e9e657eeac6951f4be5680abe1362c.png"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> VPS技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>test_new</title>
       <link href="/2024/09/24/nezha/"/>
       <url>/2024/09/24/nezha/</url>
@@ -22,19 +41,6 @@
       <url>/2024/09/24/test-new/</url>
       
         <content type="html"><![CDATA[<div class="video-container">[up主专用，视频内嵌代码贴在这]</div><style>.video-container {    position: relative;    width: 100%;    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */}.video-container iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Netcup重置系统</title>
-      <link href="/2024/09/24/new-page/"/>
-      <url>/2024/09/24/new-page/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Netcup-重装系统"><a href="#Netcup-重装系统" class="headerlink" title="Netcup 重装系统"></a>Netcup 重装系统</h1><h2 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h2><p>本文章为指导入门型，如有错误请及时指出 <a href="https://t.me/upwithstar">TG 联系</a></p><p>SCP是Netcup的产品服务控制台，可以订购，查询产品信息，提交工单等</p><p>CCP是Netcup的设备控制台，可以对服务器进行操作比如VNC，重置，挂载等</p><h2 id="配置ssh密钥"><a href="#配置ssh密钥" class="headerlink" title="配置ssh密钥"></a>配置ssh密钥</h2><p>点击“SCP Auto-Login”进入SCP面板<br><img src="https://img.myservps.work/2024-10/20241014180236-5dc8b6ab6fbfbc59ffbbb65736998075.png"></p><p>选中一台设备，进入该设备的控制台，然后点击右上角的Option<br><img src="https://img.myservps.work/2024-10/20241014181649-c8311e2393b702c691f38b4f28d9d1b3.png"></p><p>建议使用ssh登陆方式，因为netcup重置系统sshd_config配置有问题，所以还得先通过VNC修改ssh配置，使用ssh密钥登录就没有这个烦恼<br><img src="https://img.myservps.work/2024-10/20241014181920-dcf3ce6fb45f9d2fc59c3ce0198d1015.png"></p><p><a href="https://bkssl.com/ssl/ssh_generate">在线ssh密钥对生成工具网站</a>  可以使用这个快速生成ssh密钥对<br><img src="https://img.myservps.work/2024-10/20241014182419-123e95d08bca177bab9c3b89a6e46021.png"></p><p>回到SCP，把公钥贴上去，起个名字，SAVE保存，你的私钥与ssh密钥应该妥善保存<br><img src="https://img.myservps.work/2024-10/20241014183053-e4dc89bd4179735b598cd0536f4d5b95.png"></p><h2 id="SCP-重置系统"><a href="#SCP-重置系统" class="headerlink" title="SCP 重置系统"></a>SCP 重置系统</h2><p><img src="https://img.myservps.work/2024-10/20241014183233-5147d932beff9f7a7b5801f06944d176.png"></p><p>选择要安装的镜像，这些为常用镜像，点击对应镜像即可进入下一步<br><img src="https://img.myservps.work/2024-10/20241014183300-3cb3dbc49edd49853389e728bc0629cd.png"></p><p>然后选择这里<br><img src="https://img.myservps.work/2024-10/20241014183442-aa19ef1b89dc88b7d42d3f66cf1be698.png"></p><p>根据图片信息，Locale为语言环境，可以选择 <code>en_US</code><br><img src="https://img.myservps.work/2024-10/20241014183733-1dd41c438bb53f7855fa7453e232c0ed.png"></p><p>预览并重置<br><img src="https://img.myservps.work/2024-10/20241014184054-00b52ccf55dddbc891f48f9dca73f380.png"></p><p>重置中，不要关闭页面<br><img src="https://img.myservps.work/2024-10/20241014184131-0834b9f3bdf0981eea14978320f088f0.png"></p><p>这里重置完成会有提示，并且这里还会给你Root密钥，不过无所谓，我们使用SSH登录<br><img src="https://img.myservps.work/2024-10/20241014184644-36225a90f0fa38f5311143d74be2d243.png"></p><h2 id="Termius-登录"><a href="#Termius-登录" class="headerlink" title="Termius 登录"></a>Termius 登录</h2><p>Termius可以去<a href="https://termius.com/">Termius官网</a>  下载或者微软商店以及谷歌商店<br>Termius必须付费，可以去小黄鱼买低价区的号</p><p>添加ssh密钥对<br><img src="https://img.myservps.work/2024-10/20241014195116-89d1faf2826caf4ef63370ac2931305a.png"></p><p>配置ssh连接<br><img src="https://img.myservps.work/2024-10/20241014200429-4b97a97d45d16cfa631bcda4e7c2e436.png"></p><p>详细配置，Password是Root的密码，SSH的密码叫PassPhrase<br><img src="https://img.myservps.work/2024-10/20241014200606-6f8cf7c543cba90ab62a0194f383bd7e.png"></p><h2 id="Terminal-登录"><a href="#Terminal-登录" class="headerlink" title="Terminal 登录"></a>Terminal 登录</h2><p><a href="https://www.terminal.icu/">官网下载Xterminal</a></p><p>创建仓库密码<br><img src="https://img.myservps.work/2024-10/20241014202053-3a310d431e2dc70138d74487bc6ac4ca.png"></p><p>配置SSH连接<br><img src="https://img.myservps.work/2024-10/20241014202347-76e9e657eeac6951f4be5680abe1362c.png"></p>]]></content>
       
       
       
