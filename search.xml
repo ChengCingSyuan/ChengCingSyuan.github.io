@@ -24,8 +24,8 @@
     
     <entry>
       <title>test_new</title>
-      <link href="/2024/09/24/nezha/"/>
-      <url>/2024/09/24/nezha/</url>
+      <link href="/2024/09/24/test-new/"/>
+      <url>/2024/09/24/test-new/</url>
       
         <content type="html"><![CDATA[<div class="video-container">[up主专用，视频内嵌代码贴在这]</div><style>.video-container {    position: relative;    width: 100%;    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */}.video-container iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style>]]></content>
       
@@ -37,8 +37,8 @@
     
     <entry>
       <title>test_new</title>
-      <link href="/2024/09/24/test-new/"/>
-      <url>/2024/09/24/test-new/</url>
+      <link href="/2024/09/24/nezha/"/>
+      <url>/2024/09/24/nezha/</url>
       
         <content type="html"><![CDATA[<div class="video-container">[up主专用，视频内嵌代码贴在这]</div><style>.video-container {    position: relative;    width: 100%;    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */}.video-container iframe {    position: absolute;    top: 0;    left: 0;    width: 100%;    height: 100%;}</style>]]></content>
       
